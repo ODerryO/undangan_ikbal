@@ -482,7 +482,7 @@ window.addEventListener('load', () => {
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "07/31/",
+        dayMonth = "07/30/",
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
@@ -512,3 +512,26 @@ window.addEventListener('load', () => {
           //seconds
         }, 0)
     }());
+
+
+
+// const timer = () => {
+//     var countDownDate = (new Date(document.getElementById('tampilan-waktu-acara').getAttribute('data-waktu-acara').replace(' ', 'T'))).getTime();
+//     var time = undefined;
+//     var distance = undefined;
+
+//     time = setInterval(() => {
+//         distance = countDownDate - (new Date()).getTime();
+
+//         if (distance < 0) {
+//             clearInterval(time);
+//             time = undefined;
+//             return;
+//         }
+
+//         document.getElementById('hari').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+//         document.getElementById('jam').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         document.getElementById('menit').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//         document.getElementById('detik').innerText = Math.floor((distance % (1000 * 60)) / 1000);
+//     }, 1000);
+// };
